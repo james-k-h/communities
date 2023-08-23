@@ -1,0 +1,8 @@
+i. light / dark mode switch
+
+ii. themes -> set colours
+
+iii. remap colouring
+
+iv. add a footer?
+
