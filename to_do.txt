@@ -5,5 +5,3 @@ ii. themes -> set colours
 iii. remap colouring
 
 iv. add a footer?
-
-pw=BVIsuhwkhJtBRrjb
