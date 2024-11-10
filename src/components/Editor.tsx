@@ -110,7 +110,7 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
                   });
                   return {
                     success: 1,
-                    files: {
+                    file: {
                       // @ts-ignore
                       url: res.fileUrl,
                     },
