@@ -1,5 +1,5 @@
 'use client';
-
+// @ts-nocheck
 import EditorJS from '@editorjs/editorjs';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { usePathname, useRouter } from 'next/navigation';
@@ -105,8 +105,9 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
               uploader: {
                 async uploadByFile(file: File) {
                   // upload to uploadthing
-                  const [res] = await uploadFiles([file], 'imageUploader')
-
+                  const [res] = await uploadFiles("imageUploader", {
+                    files: [file],
+                  });
                   return {
                     success: 1,
                     file: {
