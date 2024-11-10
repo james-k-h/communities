@@ -1,5 +1,5 @@
 'use client';
-// @ts-nocheck
+
 import EditorJS from '@editorjs/editorjs';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { usePathname, useRouter } from 'next/navigation';
