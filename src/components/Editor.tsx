@@ -114,7 +114,8 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
                   return {
                     success: 1,
                     file: {
-                      url: res.fileUrl, // @ts-expect-error
+                      // @ts-ignore
+                      url: res.fileUrl, 
                     },
                   };
                 },
