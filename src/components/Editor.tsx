@@ -16,9 +16,6 @@ import axios from 'axios';
 
 import '@/styles/editor.css';
 
-
-
-
 type FormData = z.infer<typeof PostValidator>;
 
 interface EditorProps {
@@ -108,14 +105,14 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
               uploader: {
                 async uploadByFile(file: File) {
                   // upload to uploadthing
-                  const [res] = await uploadFiles("imageUploader", {
+                  const [res] = await uploadFiles('imageUploader', {
                     files: [file],
                   });
                   return {
                     success: 1,
-                    file: {
+                    files: {
                       // @ts-ignore
-                      url: res.fileUrl, 
+                      url: res.fileUrl,
                     },
                   };
                 },
