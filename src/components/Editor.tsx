@@ -1,5 +1,4 @@
 'use client';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import EditorJS from '@editorjs/editorjs';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -115,7 +114,7 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
                   return {
                     success: 1,
                     file: {
-                      url: res.fileUrl,
+                      url: res.fileUrl, // @ts-ignore
                     },
                   };
                 },
